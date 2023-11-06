@@ -1,19 +1,12 @@
-// set the constants that will become physical on the html tab
-const container = document.getElementById("container");
-let rows = document.getElementById("gridRow");
-let cells = document.getElementById("cell");
+const container = document.getElementById('board');
 
-// for (let i = 0; i < 16; i++) {
-//   const gridPiece = document.createElement("div");
-//   gridPiece.innerText = "div";
-//   document.body.appendChild(gridPiece);
-// }
+function gridCreation(rows, cols) {
+    container.style.setProperty('--grid-rows', rows);
+    container.style.setProperty('--grid-cols', cols);
+    for (i = 0; i < (rows * cols); i++) {
+        let cell = document.createElement('div');
+        container.appendChild(cell).className = "grid-item";
+    };
+};
 
-// function theGrid () {
-//     document.createElement("div");
-
-// }
-
-// for (i = 0; i < yield.length; i++) {
-//     y[i].style.flex = "1";
-// }
+gridCreation(16, 16);
