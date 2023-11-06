@@ -10,19 +10,24 @@
 
 <body>
     <div class="flex-container">
-        
+
         <div class="title">
             <h1>Etch-a-sketch</h1>
         </div>
 
         <div class="content">
-            <button>Color mode</button>
-            <button>Rainbow mode</button>
-            <button>Eraser</button>
-            <button>Clear</button>
+            <button onClick="changeColor('black')">Black</button>
+            <button onClick="changeColor('random')">Rainbow mode</button>
+            <button onClick="changeColor('white')">Eraser</button>
+            <button onClick="clearBoard()">Clear</button>
         </div>
 
-        <div id="board"></div>
+        <div class="board"></div>
+
+        <div class="board-logic">
+            <input type="text" placeholder="Size of Board" onchange="changeSize(this.value)">
+            <button>Set Size</button>
+        </div>
     </div>
 </body>
 <script src="index.js"></script>
