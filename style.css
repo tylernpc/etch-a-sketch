@@ -15,9 +15,20 @@ body {
     padding-top: 20px;
 }
 
+.hero-section {
+    position: absolute;
+    top: 24%;
+    right: 30%;
+}
+
+.board-logic {
+    position: absolute;
+    bottom: 20%;
+    right: 34%;
+}
+
 .hero-section, .board-logic {
     display: flex;
-    border: solid red 2px;
     margin: 6em 30em;
     flex-direction: column;
 }
@@ -25,7 +36,11 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 70px 0px 70px;
+}
+
+.content button {
+    padding: 20px 70px;
 }
 
 .board {
@@ -37,7 +52,7 @@ body {
     display: grid;
     box-shadow: 0px 0px 5px rgb(255, 255, 255), 0px 0px 20px rgb(0, 0, 0), 0px 0px 40px rgb(255, 255, 255);
     margin: 20px 0px;
-    /* background-color: white; */
+    background-color: white;
 }
 
 .board-logic {
@@ -46,12 +61,17 @@ body {
 
 button, input {
     background-color: black;
-    border: solid springgreen 2px;
+    border: solid lightblue 2px;
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 25px;
     color: white;
+    cursor: pointer;
 }
 
 ::placeholder {
     color: white;
+}
+
+.notify {
+    margin-top: 10em;
 }
